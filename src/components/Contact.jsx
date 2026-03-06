@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact() {
   return (
     <div className="min-h-screen bg-[#F5F7FF] flex items-center justify-center p-6 relative">
-      <div className="max-w-4xl w-full bg-white rounded-4xl p-12 md:p-16 shadow-xl relative z-10">
+      <div className="max-w-6xl w-full bg-white rounded-4xl p-12 md:p-16 shadow-xl relative z-10">
         {/* Header */}
         <div className="mb-12 text-center">
           <h1 className="text-[#06229f] text-4xl md:text-5xl font-bold mb-4">
@@ -43,7 +43,7 @@ export default function Contact() {
 
           {/* Social Media */}
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/company/servixa/"
             target="_blank"
             rel="noopener noreferrer"
           >

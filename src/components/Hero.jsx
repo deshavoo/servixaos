@@ -26,12 +26,18 @@ export default function HeroSection() {
           </p>
           {/* أزرار */}
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-[#06229f] hover:bg-[#2C4EFF] text-white font-semibold py-4 px-8 rounded-full text-lg transition-colors">
+            <a
+              href="#before"
+              className="bg-[#06229f] hover:bg-[#2C4EFF] text-white font-semibold py-4 px-8 rounded-full text-lg transition-colors"
+            >
               Get Started
-            </button>
-            <button className="bg-[#06229f] hover:bg-[#2C4EFF] text-white font-semibold py-4 px-8 rounded-full text-lg transition-colors">
+            </a>
+            <a
+              href="#advantage"
+              className="bg-[#06229f] hover:bg-[#2C4EFF] text-white font-semibold py-4 px-8 rounded-full text-lg transition-colors"
+            >
               Learn More
-            </button>
+            </a>
           </div>
         </div>
       </div>

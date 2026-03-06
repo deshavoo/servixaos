@@ -1,18 +1,32 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Vision() {
   return (
     <div className="min-h-screen bg-[#F5F7FF] flex items-center justify-center p-6 relative">
       <div className="max-w-7xl w-full relative z-10">
-        {/* Main heading */}
-        <h2 className="text-blue-800 text-4xl md:text-5xl font-bold mb-12 text-center">
+        {/* Main heading  */}
+        <motion.h2
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-blue-800 text-4xl md:text-5xl font-bold mb-12 text-center"
+        >
           Our Vision: Your Trusted Global Partner
-        </h2>
+        </motion.h2>
 
         {/* Three panel grid */}
         <div className="grid md:grid-cols-3 gap-6">
           {/* Panel 1 */}
-          <div className="bg-white rounded-3xl p-8 flex flex-col h-full shadow-md hover:shadow-xl transition">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            whileHover={{ y: -10 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-3xl p-8 flex flex-col h-full shadow-md hover:shadow-xl transition"
+          >
             <span className="text-[#06229f] text-lg font-semibold mb-4">
               Global Reach
             </span>
@@ -40,10 +54,17 @@ export default function Vision() {
               top-tier customer support, fostering trust and loyalty across
               borders.
             </p>
-          </div>
+          </motion.div>
 
           {/* Panel 2 */}
-          <div className="bg-white rounded-3xl p-8 flex flex-col h-full shadow-md hover:shadow-xl transition">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            whileHover={{ y: -10 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-3xl p-8 flex flex-col h-full shadow-md hover:shadow-xl transition"
+          >
             <span className="text-[#06229f] text-lg font-semibold mb-4">
               Trusted Support
             </span>
@@ -72,10 +93,17 @@ export default function Vision() {
               top-tier customer support, fostering trust and loyalty across
               borders.
             </p>
-          </div>
+          </motion.div>
 
           {/* Panel 3 */}
-          <div className="bg-white rounded-3xl p-8 flex flex-col h-full shadow-md hover:shadow-xl transition">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            whileHover={{ y: -10 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-3xl p-8 flex flex-col h-full shadow-md hover:shadow-xl transition"
+          >
             <span className="text-[#06229f] text-lg font-semibold mb-4">
               Growth Focused
             </span>
@@ -104,7 +132,7 @@ export default function Vision() {
               top-tier customer support, fostering trust and loyalty across
               borders.
             </p>
-          </div>
+          </motion.div>
         </div>
 
         {/* Decorative elements */}
