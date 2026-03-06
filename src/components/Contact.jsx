@@ -17,50 +17,49 @@ export default function Contact() {
 
         {/* Channels Grid */}
         <div className="grid md:grid-cols-2 gap-6">
-          {/* Chat Support */}
-          <div className="bg-[#F0F3FF] rounded-2xl p-6 hover:shadow-xl transition-shadow">
-            <h3 className="text-gray-900 text-xl font-bold mb-2">
-              Chat Support
-            </h3>
-            <p className="text-gray-600">
-              Real-time assistance through live chat platforms
-            </p>
-          </div>
-
           {/* Voice Support */}
-          <div className="bg-[#F0F3FF] rounded-2xl p-6 hover:shadow-xl transition-shadow">
-            <h3 className="text-gray-900 text-xl font-bold mb-2">
-              Voice Support
-            </h3>
-            <p className="text-gray-600">
-              Professional phone support in 50+ languages
-            </p>
-          </div>
+          <a href="tel:+19298284909">
+            <div className="bg-[#F0F3FF] rounded-2xl p-6 hover:shadow-xl transition-shadow">
+              <h3 className="text-gray-900 text-xl font-bold mb-2">
+                Voice Support
+              </h3>
+              <p className="text-gray-600">
+                Professional phone support in 50+ languages
+              </p>
+            </div>
+          </a>
 
           {/* Email Support */}
-          <div className="bg-[#F0F3FF] rounded-2xl p-6 hover:shadow-xl transition-shadow">
-            <h3 className="text-gray-900 text-xl font-bold mb-2">
-              Email Support
-            </h3>
-            <p className="text-gray-600">
-              Thorough, detailed responses to customer inquiries
-            </p>
-          </div>
+          <a href="mailto:example@email.com">
+            <div className="bg-[#F0F3FF] rounded-2xl p-6 hover:shadow-xl transition-shadow">
+              <h3 className="text-gray-900 text-xl font-bold mb-2">
+                Email Support
+              </h3>
+              <p className="text-gray-600">
+                Thorough, detailed responses to customer inquiries
+              </p>
+            </div>
+          </a>
 
           {/* Social Media */}
-          <div className="bg-[#F0F3FF] rounded-2xl p-6 hover:shadow-xl transition-shadow">
-            <h3 className="text-gray-900 text-xl font-bold mb-2">
-              Social Media
-            </h3>
-            <p className="text-gray-600">
-              Engage customers across all social platforms
-            </p>
-          </div>
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="bg-[#F0F3FF] rounded-2xl p-6 hover:shadow-xl transition-shadow">
+              <h3 className="text-gray-900 text-xl font-bold mb-2">
+                Social Media
+              </h3>
+              <p className="text-gray-600">
+                Engage customers across all social platforms
+              </p>
+            </div>
+          </a>
         </div>
 
         {/* Decorative elements */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-4xl">
-          {/* Top right circle */}
           <svg
             className="absolute top-1/4 right-8 w-24 h-24 opacity-10"
             viewBox="0 0 100 100"
@@ -84,7 +83,6 @@ export default function Contact() {
             />
           </svg>
 
-          {/* Bottom left abstract curve */}
           <svg
             className="absolute bottom-1/4 left-8 w-32 h-32 opacity-10"
             viewBox="0 0 100 100"
