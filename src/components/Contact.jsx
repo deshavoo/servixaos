@@ -30,7 +30,7 @@ export default function Contact() {
           </a>
 
           {/* Email Support */}
-          <a href="mailto:example@email.com">
+          <a href="mailto:servixaos@outlook.com">
             <div className="bg-[#F0F3FF] rounded-2xl p-6 hover:shadow-xl transition-shadow">
               <h3 className="text-gray-900 text-xl font-bold mb-2">
                 Email Support
