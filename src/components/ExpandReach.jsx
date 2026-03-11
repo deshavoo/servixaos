@@ -1,3 +1,5 @@
+import { PopupButton } from "react-calendly";
+
 export default function ExpandReach() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
@@ -21,15 +23,19 @@ export default function ExpandReach() {
                 Learn More
               </button>
 
-              <button className="bg-[#06229f] hover:bg-[#041a7a] text-white font-semibold py-3 px-7 rounded-full text-lg transition-colors">
-                Schedule a Call →
-              </button>
+              <PopupButton
+                url="https://calendly.com/servixaos/30min"
+                rootElement={document.getElementById("root")}
+                text="Schedule a Call →"
+                className="bg-[#06229f] hover:bg-[#041a7a] text-white font-semibold py-3 px-7 rounded-full text-lg transition-colors"
+              />
             </div>
           </div>
 
           <div className="relative flex justify-center items-center">
             <div className="absolute top-0 right-0 w-32 h-32 bg-[#06229f]/10 rounded-full blur-2xl"></div>
             <div className="absolute bottom-0 left-0 w-40 h-40 bg-[#06229f]/10 rounded-full blur-2xl"></div>
+
             <div className="relative z-10 grid grid-cols-3 gap-3">
               {[...Array(9)].map((_, i) => (
                 <div
@@ -40,6 +46,7 @@ export default function ExpandReach() {
                 ></div>
               ))}
             </div>
+
             <svg
               className="absolute inset-0 w-full h-full pointer-events-none"
               style={{ opacity: 0.15 }}
@@ -79,6 +86,7 @@ export default function ExpandReach() {
             </svg>
           </div>
         </div>
+
         <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-3xl">
           <div className="absolute top-20 right-20 w-64 h-64 bg-[#06229f]/5 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 left-20 w-64 h-64 bg-[#06229f]/5 rounded-full blur-3xl"></div>
