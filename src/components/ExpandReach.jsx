@@ -9,25 +9,19 @@ export default function ExpandReach() {
             <h1 className="text-white text-4xl md:text-5xl font-bold leading-tight mb-4">
               Ready to Expand Your Reach?
             </h1>
-            <p className="text-gray-400 text-lg md:text-xl mb-8">
+
+            <p className="text-gray-400 text-lg md:text-xl mb-10">
               Let ServixaOS be the bridge to your international success. We're
               here to help you connect with your customers, everywhere.
             </p>
 
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-[#06229f] hover:bg-[#041a7a] text-white font-semibold py-3 px-7 rounded-full text-lg transition-colors">
-                Let&apos;s Build Your Global Support →
-              </button>
-
-              <button className="border border-[#06229f] text-[#06229f] hover:bg-[#06229f] hover:text-white font-semibold py-3 px-7 rounded-full text-lg transition-colors">
-                Learn More
-              </button>
-
+            {/* Schedule Call Button */}
+            <div className="flex justify-start">
               <PopupButton
                 url="https://calendly.com/servixaos/30min"
                 rootElement={document.getElementById("root")}
                 text="Schedule a Call →"
-                className="bg-[#06229f] hover:bg-[#041a7a] text-white font-semibold py-3 px-7 rounded-full text-lg transition-colors"
+                className="bg-[#06229f] hover:bg-[#041a7a] text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-lg hover:scale-105"
               />
             </div>
           </div>
