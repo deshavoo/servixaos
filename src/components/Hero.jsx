@@ -1,14 +1,13 @@
-import heroBg from "../assets/herrobgg.png"; // عدلي المسار حسب مكان الصورة
+import heroBg from "../assets/herrobgg.webp";
 
 export default function HeroSection() {
   return (
     <div
-      className="hero min-h-screen bg-center bg-cover relative"
+      className="hero min-h-screen bg-[#eef1ff] bg-center bg-cover relative"
       style={{
         backgroundImage: `url(${heroBg})`,
       }}
     >
-      {/* Overlay أغمق */}
       <div className="hero-overlay bg-white/20"></div>
 
       <div className="hero-content relative text-center  px-6">
@@ -24,7 +23,6 @@ export default function HeroSection() {
             growth. We speak your customers' language, so you can focus on
             scaling.
           </p>
-          {/* أزرار */}
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="#before"

@@ -4,3 +4,21 @@
 html {
     scroll-behavior: smooth;
 }
+
+@keyframes softPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(6, 34, 159, 0.5);
+    }
+
+    70% {
+        box-shadow: 0 0 0 12px rgba(6, 34, 159, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(6, 34, 159, 0);
+    }
+}
+
+.pulse-btn {
+    animation: softPulse 2.5s infinite;
+}

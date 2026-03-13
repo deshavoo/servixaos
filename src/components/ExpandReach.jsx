@@ -21,7 +21,7 @@ export default function ExpandReach() {
                 url="https://calendly.com/servixaos/30min"
                 rootElement={document.getElementById("root")}
                 text="Schedule a Call →"
-                className="bg-[#06229f] hover:bg-[#041a7a] text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-lg hover:scale-105"
+                className="bg-[#06229f] hover:bg-[#041a7a] text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-lg hover:scale-105 pulse-btn"
               />
             </div>
           </div>
